@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Ticket Booking</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-image: url('trainback.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+
+        h4 {
+            margin: 0 0 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        form input, form select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        .logo img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        .signup {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .signup a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .signup a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="booking">
+            <div class="logo">
+                <img src="Ticket.png" alt="Train Logo">
+            </div>
+            <h4>Railway Ticket Booking</h4>
+            <form>
+                <input type="text" placeholder="Enter your name" required>
+                <input type="email" placeholder="Enter your email" required>
+                <input type="text" placeholder="Enter contact number" required>
+                <select required>
+                    <option value="" disabled selected>Select your destination</option>
+                    <option value="city1">Hyderabad</option>
+                    <option value="city2">Mumbai</option>
+                    <option value="city3">Gujarat</option>
+                </select>
+                <input type="date" placeholder="Travel Date" required>
+                <button type="submit">Book Ticket</button>
+            </form>
+            <div class="signup">
+                Already have an account? <a href="#">Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
